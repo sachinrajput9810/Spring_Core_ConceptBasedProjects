@@ -16,7 +16,7 @@ public class EmployeeMgmtServiceImpl implements IEmployeeMgmtService {
 	
 	@Override
 	public String registerEmployee(EmployeeDTO dto) throws Exception {
-		// busnes logic for net and gross salary
+		// business logic for net and gross salary
 		System.out.println("Register Employee method called " ) ;
 		float grossSalary = dto.getBasicSalary() + dto.getBasicSalary()*0.4f ;
 		float netSalary = grossSalary - dto.getBasicSalary()*0.2f ;
